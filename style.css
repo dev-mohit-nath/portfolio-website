@@ -8,9 +8,10 @@
 
 .sidebar {
     background-color: rgb(185, 178, 178);
-    width: 434px;
     font-family: "Google Sans Code", monospace;
     height: 100vh;
+    transition: transform 0.3s ease-in;
+    position: absolute;
 }
 
 .sidebar nav {
@@ -48,28 +49,29 @@
 }
 
 .hello {
-    font-size: 65px;
+    font-size: 3em;
 }
 
 .name {
-    font-size: 50px;
+    font-size: 3em;
     font-weight: bold;
     font-family: "Google Sans Code", monospace;
 }
 
 .about {
-    font-size: 40px;
+    font-size: 2.5em;
 }
 
 .moreabout {
-    font-size: 22px;
+    font-size: 2em;
     margin-top: 23px;
     font-family: "Google Sans Code", monospace;
 
 }
 
 .buttons {
-    margin-top: 34px;
+    margin-top: 2.2em;
+    font-size: 16px;
 }
 
 .btn {
@@ -78,10 +80,10 @@
     color: white;
     background-color: dodgerblue;
     font-weight: bold;
-    font-size: 21px;
+    font-size: 2em;
     border: 2px solid rgb(255, 255, 255);
     cursor: pointer;
-    margin: 0 3px;
+    margin: 3px 3px;
 }
 
 .btn-sm {
@@ -98,6 +100,7 @@
 }
 
 .devinfo {
+    font-size: 16px;
     justify-content: center;
     display: flex;
     flex-direction: column;
@@ -112,13 +115,12 @@
 .contectform {
     font-family: "Google Sans Code", monospace;
     padding: 0 34px;
-    padding-top: 144px;
-
+    margin: 88px;
 }
 
 .contectform h1 {
     font-family: "Ubuntu", sans-serif;
-    padding: 12px 0;
+    /* padding: 12px 0; */
 }
 
 .container form div {
@@ -128,10 +130,16 @@
 }
 
 .container form div input {
-    width: 26vw;
+    /* width: 36vw; */
+    /* height: 25px; */
     border-radius: 5px;
     margin: 6px 0 0 0;
     padding: 3px;
+    border: 1px black solid;
+}
+
+.container form {
+    margin: 0 40px;
 }
 
 #emailHelp {
@@ -146,8 +154,8 @@
 }
 
 #form-check input {
-    width: 24px;
-    margin: 3px 0;
+    width: 34px;
+    margin-top: -2px;
 }
 
 /* blog page */
@@ -155,6 +163,10 @@
 .blogItems {
     margin: 20px;
     font-family: "Google Sans Code", monospace;
+}
+
+.blogContainer {
+    margin: 88px;
 }
 
 h1 {
@@ -165,6 +177,10 @@ h1 {
 p {
     font-family: "Google Sans Code", monospace;
 
+}
+
+.intro {
+    margin: 88px;
 }
 
 .intro h2 {
@@ -208,4 +224,56 @@ p {
 .t5 {
     width: 90px;
     background-color: yellowgreen;
+}
+
+.sidebarGo {
+    transform: translate(-443px, 0px);
+    position: absolute;
+}
+
+
+.hamBurger {
+    position: absolute;
+    cursor: pointer;
+    top: 10px;
+    left: 10px;
+}
+
+.ham {
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+.cross {
+    margin-top: 10px;
+    margin-left: 185px;
+}
+
+@media (max-width: 1615px) {
+    * {
+        /* background-color: brown; */
+    }
+
+    .devpic {
+        display: none;
+    }
+
+    .buttons {
+        font-size: 10px;
+    }
+
+    .devinfo {
+        font-size: 10px;
+    }
+
+    .intro .blogContainer .contectform {
+        margin: 50px 8px;
+    }
+
+    /* 
+    .sidebar {
+        transform: translate(-443px, 0px);
+        position: absolute;
+    } */
+
 }
